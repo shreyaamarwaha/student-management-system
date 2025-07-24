@@ -1,4 +1,4 @@
-package com.example.studentmanagement.model;
+package com.example.studentmanagement;
 
 import jakarta.persistence.*;
 
@@ -29,4 +29,4 @@ public class Student {
 
     public int getAge() { return age; }
     public void setAge(int age) { this.age = age; }
-}
+} 

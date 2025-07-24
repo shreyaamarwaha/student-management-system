@@ -1,7 +1,7 @@
-package com.example.studentmanagement.service;
+package com.example.studentmanagement;
 
-import com.example.studentmanagement.model.Student;
-import com.example.studentmanagement.repository.StudentRepository;
+import com.example.studentmanagement.Student;
+import com.example.studentmanagement.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,4 +33,8 @@ public class StudentService {
     public void deleteStudent(Long id) {
         repo.deleteById(id);
     }
-}
+
+    public Student getStudentById(Long id) {
+        return repo.findById(id).orElse(null);
+    }
+} 

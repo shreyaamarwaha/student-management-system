@@ -1,7 +1,6 @@
-package com.example.studentmanagement.repository;
+package com.example.studentmanagement;
 
-import com.example.studentmanagement.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface StudentRepository extends JpaRepository<Student, Long> {
-}
+} 
